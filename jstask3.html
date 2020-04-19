@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	const finalArray = []
+const NumberChangeFunction=(number)=>{
+    for(var i =1;i<=number;i++){
+        if(i%2==0 && i%3!=0 && i%5!=0){
+            finalArray.push("yu")
+
+        }else if(i%2==0 && i%3==0 && i%5==0){
+            finalArray.push("yu-gi-oh")
+         }
+        else if(i%2!==0 && i%3==0 && i%5!=0){
+            finalArray.push("gi")
+        }else if(i%2!==0 && i%3!==0 && i%5==0){
+            finalArray.push("oh")
+        }else if(i%2==0 && i%3==0){
+           finalArray.push("yu-gi")
+        }else if(i%2==0 && i%5==0){
+            finalArray.push("yu-oh")
+         }else if(i%3==0 && i%5==0){
+            finalArray.push("gi-oh")
+         }
+         else{
+             finalArray.push(i)
+         }
+
+    }
+ console.log(finalArray)
+}
+
+NumberChangeFunction(100)
+</script>
+</body>
+</html>
